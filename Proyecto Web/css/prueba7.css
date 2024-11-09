@@ -1,0 +1,232 @@
+/* Fondo de la página */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    background-image: linear-gradient(
+		0deg,
+		rgba(0,0,0,0.5),
+		rgba(0,0,0,0.5)
+	), url("Imagen/foto3.webp"); /* Ruta de la imagen de fondo */
+    background-size: cover; /* Hace que la imagen cubra toda la pantalla */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-attachment: fixed; /* Fija la imagen para que no se desplace al hacer scroll */
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body{
+	font-family: 'roboto', sans-serif;
+	margin: 0;
+}
+
+h1{ font-size:3.5em}
+h2{ font-size:2.7em;}
+p{ font-size: 1.25em;}
+
+.conteiner{
+	max-width: 1400px;
+	margin: auto;
+}
+
+header{
+	background-color: rgba(145, 241, 11, 0.919);
+}
+
+header .logo{
+	margin: 0;
+	padding: 25px 50px;
+	font-weight: bold;
+	color: rgb(17, 168, 9);
+	font-size: 1.45em;
+}
+header .conteiner{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+header nav{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	padding-bottom: 25px;
+}
+
+header a{
+	padding: 5px 12px;
+	text-decoration: none;
+	font-weight: bold;
+	color: black;
+}
+
+header a:hover{
+	color: rgb(17, 168, 9);
+}
+
+#hero{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	flex-direction: column;
+	height: 80vh;
+	color: white;
+	background-image: linear-gradient(
+		0deg,
+		rgba(0,0,0,0.5),
+		rgba(0,0,0,0.5)
+	)
+	,url(Imagen/foto1.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+
+#introduccion .conteiner{
+	text-align: center;
+	color: white;
+	padding: 30px 12px;
+}
+
+footer p{
+	margin: 0;
+	padding: 12px;
+	color: rgb(255, 255, 255);
+}
+
+footer .conteiner{
+	height: 150px;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+}
+
+@media (min-width: 720px){
+	header{
+		position: fixed;
+		width: 100%;
+	}
+
+	header .conteiner{
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	header nav{
+		flex-direction: row;
+		padding-bottom: 0;
+		padding-right: 20px;
+	}
+}
+
+#hero h1{
+	font-size: 5em;
+}
+
+#introduccion .conteiner{
+	display: flex;
+	justify-content: center;
+	justify-content: space-evenly;
+}
+
+#introduccion .texto{
+	width: 100%;
+	max-width: 900px;
+	text-align: initial;
+	padding-left: 0px;
+	padding-right: 190px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+#introduccion h2{
+	margin-top: 0px;
+}
+
+#introduccion h2 {
+    font-size: 2.7em; /* Tamaño de fuente ajustado para el título */
+    color: rgb(255, 255, 255); /* Color blanco para el título */
+    font-weight: bold; /* Poner el título en negrita */
+    margin-bottom: 20px; /* Espaciado debajo del título */
+    margin-left: 0; /* Alinear título hacia la izquierda */
+    padding-left: 20px; /* Añadir espacio desde el borde izquierdo */
+    padding-right: 20px; /* Añadir espacio desde el borde derecho */
+    width: 100%; /* Extiende el ancho al 100% del contenedor */
+    box-sizing: border-box; /* Asegura que padding no exceda el ancho */
+}
+
+/* Contenedor de la imagen centrada */
+.image-centered {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.image-centered img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; /* Bordes redondeados opcionales */
+}
+
+/* Estilo para los párrafos de la lista */
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 10px 0;
+}
+
+/* Estilo para los elementos destacados de la lista (centrales de biomasa) */
+p strong {
+    color: #f7f319; /* Color de texto para los nombres de las centrales */
+}
+
+/* Opcional: Estilo para diferenciar los párrafos de las centrales */
+p:nth-child(n+3) { /* Aplica a los elementos de la lista de centrales, ajustando si es necesario */
+    padding-left: 20px;
+    text-indent: -15px; /* Sangría colgante para alinear la lista */
+}
+
+
+/* Estilo para el índice */
+ul {
+    position: absolute; /* Cambia de fixed a absolute */
+    top: 550px; /* Coloca el índice en la parte superior del contenido */
+    right: 0px; /* Coloca el índice a la derecha */
+    background-color: rgba(245, 245, 245, 0.8); /* Fondo translúcido */
+    border-radius: 19px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 200px;
+    max-height: 900px; /* Define un alto máximo */
+    overflow-y: auto; /* Habilita el desplazamiento vertical */
+}
+
+ul h3 {
+    margin-top: 0;
+    text-align: center;
+    color: rgb(17, 168, 9);
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+ul li {
+    list-style-type: none;
+    margin: 6px 0;
+}
+
+ul a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+ul a:hover {
+    color: rgb(17, 168, 9);
+    text-decoration: underline;
+    transition: color 0.3s;
+}
